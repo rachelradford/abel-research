@@ -34,12 +34,13 @@ audio:not([controls]) { display: none; }
 html { font-size: 100%; overflow-y: scroll; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; }
 
 body { margin: 0; font-size: 13px; line-height: 1.231; 
-	background: #fff;
+	background: #110e10;
 }
 
 
 body, button, input, select, textarea { 
 	font-family: 'Open Sans', sans-serif; 
+	font-weight: 300; 
 	color: #585150; 
 }
 
@@ -128,6 +129,8 @@ p, li{
 	font-size: 24px;
 	text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.2);
 	color: #fff;
+	padding-bottom: 24px;
+	width: 60%;
 }
 
 
@@ -135,7 +138,7 @@ p, li{
    Lists
    ========================================================================== */
 
-ul, ol { margin: 1em 0; padding: 0 0 0 40px; }
+ol, ul { margin: 1em 0; padding: 0 0 0 20px; }
 dd { margin: 0 0 0 40px; }
 nav ul, nav ol { list-style: none; list-style-image: none; margin: 0; padding: 0; }
 
@@ -247,6 +250,9 @@ td { vertical-align: top; }
 /* ==|== primary styles =====================================================
    Author:
    ========================================================================== */
+.page{
+	padding: 12px;
+}
 section{
 	background: #fff;
 }
@@ -276,8 +282,20 @@ header img{
 	width: 100%;
 	z-index: -10;
 }
-
-
+.clients img{
+	width: 100%;
+	max-width: 838px;
+}
+.contact img{
+	display: none;
+}
+.contact .onecol{
+	padding: 24px 0 0 0;
+}
+.clients{
+	clear: both;
+	padding-top: 18px;
+}
 
 
 
@@ -302,8 +320,14 @@ header img{
 	body{
 	  text-align: center;
 	}
+	h2{
+		padding-top: 64px;
+	}
 	#container{
 		text-align: left;
+	}
+	.page{
+		padding: 0 12px;
 	}
 	.intro p, h2{
 		font-size: 36px;
@@ -318,6 +342,32 @@ header img{
 	.edge{
 		float: right;
 	}
+	.intro{
+		padding: 30px 0 0 0;
+	}
+	.contact div{
+		position: relative;
+		z-index: 5;
+	}
+	.contact a{
+		text-decoration: none;
+		color: inherit;
+		background: #fff;
+	}
+	.contact a:hover{
+		background: #5fc7e6;
+	}
+	.contact .onecol{
+		padding-top: 95px;
+	}
+	.contact img{
+		display: inline;
+		width: 80%;
+		position: relative;
+		z-index: 1;
+		margin-top: -200px;
+		margin-left: 7%;
+	}
 }/*/mediaquery*/
 
 /*styles for 800px and up!*/
@@ -325,12 +375,16 @@ header img{
 	.page{
 	  width: 960px;
 	  margin: 0 auto;
+	  padding: 0;
 	}
 	.intro p, h2{
 		font-size: 48px;
 	}
 	p, li{
 		font-size: 18px;
+	}
+	.clients img{
+		padding-left: 10%;
 	}
 }/*/mediaquery*/
 
