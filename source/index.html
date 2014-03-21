@@ -15,22 +15,8 @@
   <meta name="MobileOptimized" content="320">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <!-- Home screen icon  Mathias Bynens http://goo.gl/6nVq0 -->
-  <!-- For iPhone 4 with high-resolution Retina display: -->
-  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="img/h/apple-touch-icon.png">
-  <!-- For first-generation iPad: -->
-  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="img/m/apple-touch-icon.png">
-  <!-- For non-Retina iPhone, iPod Touch, and Android 2.1+ devices: -->
-  <link rel="apple-touch-icon-precomposed" href="img/l/apple-touch-icon-precomposed.png">
-  <!-- For nokia devices: -->
-  <link rel="shortcut icon" href="img/l/apple-touch-icon.png">
 
-  <!--iOS web app, deletable if not needed -->
-  <!--the script prevents links from opening in mobile safari. https://gist.github.com/1042026
-  <meta name="apple-mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-status-bar-style" content="black">
-  <script>(function(a,b,c){if(c in b&&b[c]){var d,e=a.location,f=/^(a|html)$/i;a.addEventListener("click",function(a){d=a.target;while(!f.test(d.nodeName))d=d.parentNode;"href"in d&&(d.href.indexOf("http")||~d.href.indexOf(e.host))&&(a.preventDefault(),e.href=d.href)},!1)}})(document,window.navigator,"standalone")</script>
-  <link rel="apple-touch-startup-image" href="img/l/splash.png">-->
+  <link rel="shortcut icon" href="/img/favicon.ico">
 
   <!-- Mobile IE allows us to activate ClearType technology for smoothing fonts for easy reading -->
   <meta http-equiv="cleartype" content="on">
@@ -52,7 +38,7 @@
   <div id="container">
     <header>
 			<h1 class="visuallyhidden">Abel Research</h1>
-			<img src="img/logo.svg" alt="Abel Research" /> <!-- provide fallback -->
+			<img src="img/logo.svg" alt="Abel Research" />
     </header>
     <div id="main" role="main">
 			<section class="intro">
@@ -145,6 +131,23 @@
     (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];g.async=1;
     g.src=("https:"==location.protocol?"//ssl":"//www")+".google-analytics.com/ga.js";
     s.parentNode.insertBefore(g,s)}(document,"script"));
+  </script>
+  <script>/* Fallback SVG to PNG */
+  // Check if browser can handle SVG
+  if(!Modernizr.svg){
+      // Get all img tag of the document and create variables
+      var i=document.getElementsByTagName("img"),j,y;
+  
+      // For each img tag
+      for(j = i.length ; j-- ; ){
+          y = i[j].src
+          // If filenames ends with SVG
+          if( y.match(/svg$/) ){
+              // Replace "svg" by "png"
+              i[j].src = y.slice(0,-3) + 'png'
+          }
+      }
+  }
   </script>
 
 </body>

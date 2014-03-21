@@ -292,6 +292,11 @@ header img{
 .contact .onecol{
 	padding: 24px 0 0 0;
 }
+.contact a{
+	text-decoration: none;
+	color: #5fc7e6;
+	background: #fff;
+}
 .clients{
 	clear: both;
 	padding-top: 18px;
@@ -349,14 +354,6 @@ header img{
 		position: relative;
 		z-index: 5;
 	}
-	.contact a{
-		text-decoration: none;
-		color: inherit;
-		background: #fff;
-	}
-	.contact a:hover{
-		background: #5fc7e6;
-	}
 	.contact .onecol{
 		padding-top: 95px;
 	}
@@ -385,6 +382,13 @@ header img{
 	}
 	.clients img{
 		padding-left: 10%;
+	}
+	.contact a{
+		color: inherit;
+		background: none;
+	}
+	.contact a:hover{
+		background: #5fc7e6;
 	}
 }/*/mediaquery*/
 
