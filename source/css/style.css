@@ -265,10 +265,10 @@ header:after, .intro:after{
 	height: 25px;
 }
 header:after{
-	background: url(/img/blue-fade.png) repeat-x top;
+	background: url(../img/blue-fade.png) repeat-x top;
 }
 .intro:after{
-	background: url(/img/white-fade.png) repeat-x bottom;
+	background: url(../img/white-fade.png) repeat-x bottom;
 }
 header img{
 	display: blo;
