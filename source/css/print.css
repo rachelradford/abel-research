@@ -1,0 +1,56 @@
+html, body{
+	background: none;
+	color: #000!important;
+	font-family: 'Open Sans', sans-serif; 
+	font-weight: 300; 
+}
+
+h1, h2{
+	font-family: 'Montserrat Alternates', sans-serif;
+}
+h1, h2, p, ul, ol{
+		margin: 0;
+}
+h1{
+	text-transform: lowercase;
+	color: #4cc1e4;
+	margin-top: 18px;
+}
+h2{
+	font-size: 24px;
+	color: #4cc1e4;
+	padding: 24px 0 0 0;
+}
+h3{
+	font-family: 'Open Sans', sans-serif;
+	font-weight: bold; /*in case of fall-back font and numerical weight being ignored*/
+	font-weight: 600;
+	color: #27a3ca;
+	font-size: 18px;
+}
+p, li{
+	font-size: 14px;
+}
+header, .intro{
+	text-align: center;
+}
+.intro{
+	padding: 36px 0;
+}
+.intro p{
+	font-size: 24px;
+}
+
+.intro img, header img, .contact img{
+	display: none;
+}
+img.print{
+	display: block!important;
+	margin: 0 auto 24px auto;
+}
+.contact p{
+	margin-bottom: 18px;
+}
+.contact a{
+	color: #27a3ca;
+}
