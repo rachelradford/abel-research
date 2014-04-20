@@ -350,9 +350,13 @@ header img{
 	.intro{
 		padding: 30px 0 0 0;
 	}
+	.contact{
+		text-align: center;
+	}
 	.contact div{
 		position: relative;
 		z-index: 5;
+		text-align: left;
 	}
 	.contact .onecol{
 		padding-top: 95px;
@@ -360,10 +364,10 @@ header img{
 	.contact img{
 		display: inline;
 		width: 80%;
+		max-width: 850px;
 		position: relative;
 		z-index: 1;
-		margin-top: -200px;
-		margin-left: 7%;
+		margin: -200px auto 0 auto;
 	}
 }/*/mediaquery*/
 
@@ -381,6 +385,7 @@ header img{
 		font-size: 18px;
 	}
 	.clients img{
+		width: 100%;
 		padding-left: 10%;
 	}
 	.contact a{
